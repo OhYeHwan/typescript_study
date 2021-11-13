@@ -53,6 +53,7 @@
   // 반환 티입을 지정하는게 좋지만
   // void는 생략가능
   function print(): void {}
+  function print() {}
 
   // never : return 하지않는 함수
   function throwError(message: string): never {
