@@ -4,14 +4,14 @@
   // 조금더 직관적으로 코드를 작성할 수 있다.
 
   type SuccessState = {
-    result: "success";
+    result: "success"; // discriminated
     response: {
       body: string;
     };
   };
 
   type FailState = {
-    result: "fail";
+    result: "fail"; // discriminated
     reason: string;
   };
 

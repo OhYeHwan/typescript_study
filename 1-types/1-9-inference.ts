@@ -1,5 +1,5 @@
 {
-  // Type Interence
+  // Type Inference
 
   // 타입을 string으로 명시하지 않아도 에러발생 X
   let text = "hello";
