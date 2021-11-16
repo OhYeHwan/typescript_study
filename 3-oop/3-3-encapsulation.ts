@@ -37,7 +37,25 @@
     }
   }
 
-  const coffeeMachine = CoffeeMachine.makeMachine(12);
-  coffeeMachine.fillCoffeeBeans(32);
-  console.log(coffeeMachine);
+  class User {
+    get fullName(): string {
+      return `${this.firstName} ${this.lastName}`;
+    }
+
+    private internalAge = 3;
+    get age() {
+      return this.internalAge;
+    }
+    set age(num: number) {
+      this.internalAge = num;
+    }
+
+    constructor(private firstName: string, private lastName: string) {}
+  }
+
+  const user = new User("Steve", "Jobs");
+  console.log(user.fullName);
+  console.log(user.age);
+  user.age = 7;
+  console.log(user.age);
 }
