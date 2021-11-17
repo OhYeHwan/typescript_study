@@ -36,4 +36,15 @@
 
   const ellieAfterPay = pay(ellie);
   ellieAfterPay.workFullTime();
+
+  const obj = {
+    name: "yehwan",
+    age: 20,
+  };
+
+  function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+    return obj[key];
+  }
+
+  console.log(getValue(obj, "name"));
 }
