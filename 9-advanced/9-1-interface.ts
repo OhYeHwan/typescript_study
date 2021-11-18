@@ -31,6 +31,7 @@ class Pos1 implements PositionType {
 class Pos2 implements PositionInterface {
   x: number;
   y: number;
+  z: number;
 }
 
 // 공통점 : 확장 가능
